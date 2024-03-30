@@ -34,7 +34,7 @@ function getUserInput(){
   let userInput = null;
   while(true){
     userInput = 
-      +prompt("Enter the dimension of the new Table (max=100)");
+      +prompt("Enter the dimensions of the new Table (max=100)");
     if(
       !isNaN(userInput) 
       && Number.isInteger(userInput)
