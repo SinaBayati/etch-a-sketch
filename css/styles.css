@@ -1,9 +1,8 @@
 body{
   margin: 0;
-  padding: 0;
+  padding: 50px;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: center;
   align-items: center;
   background-color: black;
@@ -28,19 +27,27 @@ h2{
 }
 
 .container{
+  width: 960px;
+  height: 960px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   border: 20px solid yellow;
   border-radius: 10px;
   box-shadow: 0 0 10px yellow;
   box-shadow: 0 0 10px yellow;
+  background-color: white;
 }
 
-.cell{
-  width: 20px;
-  height: 20px;
+.container .row{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.container .cell{
   border: 1px solid black;
-  background-color: white;
+  flex: 1;
 }
 
 .active{
