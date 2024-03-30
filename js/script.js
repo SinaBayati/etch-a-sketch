@@ -19,3 +19,19 @@ function renderTable(dimension){
 }
 
 renderTable(dimension);
+
+function addListeners(){
+  let container = document.querySelector(".container");
+
+  container.addEventListener("mouseover",(e) => {
+    let target = e.target;
+    if(
+      !target.classList.contains("container")
+      && e.ctrlKey
+    ){
+      target.classList.add("active");
+    }
+  });
+}
+
+addListeners();

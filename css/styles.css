@@ -19,3 +19,7 @@ body{
   height: 20px;
   border: 1px solid black;
 }
+
+.active{
+  background-color: black;
+}
